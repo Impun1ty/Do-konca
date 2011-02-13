@@ -1,0 +1,33 @@
+<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:id="@+id/RelativeLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:background="@drawable/widgetbg">
+<TextView android:id="@+id/NapistUra" android:layout_width="100dip" android:layout_height="wrap_content" android:text="URA" android:gravity="center"
+	android:textColor="#000"
+	android:textSize="14dip"
+/>
+
+<TextView android:id="@+id/WidgetUra" android:layout_width="100dip" android:layout_height="wrap_content" android:text="00" android:layout_below="@+id/NapistUra" android:gravity="center"
+	android:textColor="#000"
+	android:textSize="30dip"
+/>
+
+<TextView android:id="@+id/NapistMinuteDoKonca" android:layout_width="100dip" android:layout_height="wrap_content" android:text="DO KONCA ŠE" android:layout_below="@+id/WidgetUra" android:gravity="center"
+	android:textColor="#000"
+	android:paddingTop="13dip"
+	android:textSize="14dip"
+/>
+
+<TextView android:id="@+id/WidgetMinute" android:layout_width="100dip" android:layout_height="wrap_content" android:text="00" android:layout_below="@+id/NapistMinuteDoKonca" android:gravity="center"
+	android:textColor="#000"
+	android:textSize="30dip"
+/>
+<TextView android:id="@+id/NapistMinut" android:layout_width="100dip" android:layout_height="wrap_content" android:text="minut" android:layout_below="@+id/WidgetMinute" android:gravity="center"
+	android:textColor="#000"
+	android:textSize="10dip"
+/>
+
+<TextView android:id="@+id/UraZvonenja" android:layout_width="100dip" android:layout_height="wrap_content" android:text="00:00" android:layout_below="@+id/NapistMinut" android:gravity="center"
+	android:paddingTop="3dip"
+	android:textColor="#AC0D1B"
+	android:textSize="10dip"
+/>
+</RelativeLayout></RelativeLayout>

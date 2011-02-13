@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Trenutna ura:"
+    android:id="@+id/Text1"
+    android:paddingTop="15dip"
+    android:paddingLeft="5dip"
+    />
+<EditText android:layout_width="50dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Text1" android:id="@+id/EditUra" android:editable="false" android:paddingLeft="3dip"/>
+
+<TextView  
+	android:layout_below="@+id/EditUra"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Minut do konca:"
+    android:id="@+id/Text2"
+    android:paddingTop="15dip"
+    android:paddingLeft="5dip"
+    />
+<EditText android:layout_width="50dip" android:layout_height="wrap_content" android:layout_toRightOf="@+id/Text2" android:layout_below="@+id/EditUra" android:id="@+id/EditMinute" android:editable="false" android:paddingLeft="3dip"/>
+<Button android:id="@+id/ButtonRefresh" android:layout_below="@+id/EditMinute" android:text="Osveži" android:layout_width="200dip" android:layout_height="wrap_content" />
+</RelativeLayout>
